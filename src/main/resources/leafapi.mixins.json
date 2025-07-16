@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin",
+	"package": "dev.aoqia.leaf.api.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+        "LuaManagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

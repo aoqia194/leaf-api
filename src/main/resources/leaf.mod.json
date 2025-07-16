@@ -1,32 +1,30 @@
 {
     "schemaVersion": 1,
-    "id": "modid",
+    "id": "leafapi",
     "version": "${version}",
-    "name": "Example mod",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "name": "Leaf API",
+    "description": "go brr",
     "authors": [
-        "Me!"
+        "aoqia"
     ],
     "contact": {
-        "sources": "https://github.com/aoqia194/leaf-example-mod"
+        "sources": "https://github.com/aoqia194/leaf-api"
     },
-    "license": "CC0-1.0",
-    "icon": "assets/modid/icon.png",
+    "license": "GPLv3",
+    "icon": "assets/leafapi/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.ExampleMod"
+            "dev.aoqia.leaf.api.LeafApi"
         ]
     },
     "mixins": [
-        "modid.mixins.json"
+        "leafapi.mixins.json"
     ],
     "depends": {
         "leafloader": ">=${loader_version}",
         "zomboid": "~${zomboid_version}",
         "java": "~17"
     },
-    "suggests": {
-        "another-mod": "*"
-    }
+    "suggests": {}
 }
