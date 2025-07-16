@@ -1,0 +1,16 @@
+[versions]
+
+leaf-loader = "1.2.0"
+leaf-loom = "0.5.1"
+leaf-yarn = "41.78.16+build.1"
+zomboid = "41.78.16"
+
+[libraries]
+
+leaf-loader = { module = "dev.aoqia.leaf:loader", version.ref = "leaf-loader" }
+leaf-yarn = { module = "dev.aoqia.leaf:yarn", version.ref = "leaf-yarn" }
+zomboid = { module = "com.theindiestone:zomboid", version.ref = "zomboid" }
+
+[plugins]
+
+leaf-loom = { id = "dev.aoqia.leaf.loom", version.ref = "leaf-loom" }
