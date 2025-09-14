@@ -16,12 +16,10 @@ public class SandboxOptionsMixin {
     @Inject(method = "load()V", at = @At("HEAD"))
     private void preLoad(CallbackInfo ci) {
         LuaEventManager.triggerEvent(Events.PRE_SANDBOX_OPTIONS_LOAD.name());
-        DebugLog.log("PRE_SANDBOX_OPTIONS_LOAD event triggered");
     }
 
     @Inject(method = "load()V", at = @At("TAIL"))
     private void postLoad(CallbackInfo ci) {
         LuaEventManager.triggerEvent(Events.POST_SANDBOX_OPTIONS_LOAD.name());
-        DebugLog.log("POST_SANDBOX_OPTIONS_LOAD event triggered");
     }
 }
