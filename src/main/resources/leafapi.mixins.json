@@ -3,7 +3,8 @@
 	"package": "dev.aoqia.leaf.api.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-        "LuaManagerMixin"
+        "LuaManagerMixin",
+        "SandboxOptionsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
